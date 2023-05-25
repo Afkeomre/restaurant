@@ -1,0 +1,53 @@
+.mobile-nav-btn {
+	--width: 31px;
+	--height: 17px;
+	--line-height: 3px;
+	--color: #FF7400;
+	height: var(--height);
+	width: var(--width);
+	z-index: 999;
+	display: none;
+}
+
+.nav-icon {
+	position: relative;
+	width: var(--width);
+	height: var(--line-height);
+	background-color: var(--color);
+	border-radius: 50px;
+}
+
+.nav-icon::before,
+.nav-icon::after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	width: var(--width);
+	height: var(--line-height);
+	background-color: var(--color);
+	border-radius: 50px;
+}
+
+.nav-icon::before {
+	bottom: 7px;
+}
+
+.nav-icon::after {
+	top: 7px;
+}
+
+.nav-icon_active {
+	background: transparent;
+}
+
+.nav-icon_active::before {
+	top: 7px;
+	transform: rotate(45deg);
+}
+
+.nav-icon_active::after {
+	transform: rotate(-45deg);
+}
+
+
