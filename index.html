@@ -12,6 +12,47 @@
 
 <body>
 	<div class="wrapper">
+		
+		<!-- Popup -->
+		<div class="popup__bg"></div>
+		
+			<form action="#" class="popup">
+				<button class="close-popup"><span class="close-popup__item"></span></button>
+				<div class="main-information">
+					<div class="popup-item popup-item__name">
+						<input type="text" name="name" pattern="[A-Za-zА-Яа-яЁё]{1,30}" autocomplete="off" id="name" maxlength="20" class="popup__name" required>
+						<label class="label__text" for="name">Ваше имя</label>
+					</div>
+					<div class="popup-item popup-item__guests">
+						<input type="number" min="1" max="8" name="guests" id="guests" required>
+						<label class="label__text" for="guests">Количество гостей</label>
+					</div>
+				</div>
+				<div class="date-time">
+					<div class="popup-item popup-item__date">
+						<input type="date" min="2023-06-05" max="2023-07-05" name="date" id="date" required>
+						<label class="label__text" for="date">Выберите дату</label>
+					</div>
+					<div class="popup-item popup-item__time">
+						<input type="time" min="09:00" max="21:00" name="time" id="time" required>
+						<label class="label__text" for="time">Укажите время</label>
+					</div>
+				</div>
+				<div class="popup-item popup-item__preferences">
+					<textarea name="preferences" maxlength="150" id="preferences"></textarea>
+					<label class="label__text" for="preferences">Ваши пожелания</label>
+				</div>
+				<div class="popup-item popup-item__phone">
+					<input type="tel" maxlength="12" placeholder="+7-XXX-XXX-XX-XX" name="phone" id="phone" required>
+					<label class="label__text" for="phone">Телефон для обратной связи</label>
+				</div>
+				<div class="popup-item popup-item__approval">
+					<input type="checkbox" name="approval" id="approval" required>
+					<label class="label__text" for="approval">Подтвердите согласие на обработку ваших персональных данных</label>
+				</div>
+				<button type="submit" class="btn btn__popup">Заказать столик</button>
+			</form>
+		
 
 		<!-- HEADER -->
 		<header class="header">
@@ -34,7 +75,7 @@
 							<div class="nav-contact__phone">+999-888-76-54</div>
 							<div class="nav-contact__text">Свяжитесь с нами для бронирования</div>
 						</div>
-						<button class="btn btn__nav">Заказ столика</button>
+						<button class="btn btn__nav reservation">Заказ столика</button>
 					</div>
 
 					<button class="mobile-nav-btn">
@@ -71,7 +112,7 @@
 					<div class="nav-contact__phone mobile-nav-contact__phone">+999-888-76-54</div>
 					<div class="nav-contact__text mobile-nav-contact__text">Свяжитесь с нами для бронирования</div>
 				</div>
-				<button class="btn btn__nav mobile-btn__nav">Заказ столика</button>
+				<button class="btn btn__nav mobile-btn__nav reservation">Заказ столика</button>
 			</div>
 		</div>
 
@@ -164,7 +205,7 @@
 								самых лучших ресторанов.</h3>
 							<p class="celebrate__text">Только в этом месяце бизнес-ланч от 250&nbsp;₽</p>
 						</div>
-						<button class="btn btn__celebrate">Заказ столика</button>
+						<button class="btn btn__celebrate reservation">Заказ столика</button>
 					</div>
 				</div>
 			</section>
@@ -422,6 +463,7 @@
 	<script src="js/mobile-nav.js"></script>
 	<script src="js/slider.js"></script>
 	<script src="js/feedback-slider.js"></script>
+	<script src="js/popup.js"></script>
 </body>
 
 </html>

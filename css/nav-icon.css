@@ -5,7 +5,7 @@
 	--color: #FF7400;
 	height: var(--height);
 	width: var(--width);
-	z-index: 999;
+	z-index: 97;
 	display: none;
 }
 
