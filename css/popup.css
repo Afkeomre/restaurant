@@ -96,7 +96,6 @@
 	color: #000;
 }
 
-
 .label__text {
 	font-size: 14px;
 	font-weight: 500;
@@ -112,6 +111,7 @@
 	width: 50px;
 	align-self: flex-end;
 }
+
 .main-information,
 .date-time {
 	display: flex;

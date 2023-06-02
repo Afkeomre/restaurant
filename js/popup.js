@@ -2,7 +2,7 @@ const reservationBtns = document.querySelectorAll('.reservation');
 const popupBg = document.querySelector('.popup__bg');
 const popup = document.querySelector('.popup');
 const closePopupBtn = document.querySelector('.close-popup');
-
+const phoneInput = document.querySelector('.phone-input');
 
 
 for (let reservationBtn of reservationBtns) {
@@ -18,6 +18,7 @@ function showPopup() {
 	popupBg.classList.add('popup__bg_open');
 	document.body.classList.add('popup__no-scroll');
 }
+
 function closePopup() {
 	popup.classList.remove('popup_active');
 	popupBg.classList.remove('popup__bg_open');
@@ -29,3 +30,7 @@ function closePopupWithEsc(event) {
 		closePopup();
 	};
 };
+
+const mask = IMask(phoneInput, {
+	mask: '+{7}(000)000-00-00'
+});
