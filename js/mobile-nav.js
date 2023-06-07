@@ -29,11 +29,11 @@ fade.onclick = function () {
 };
 
 //Запрет скролла на iOS
-if (nav.classList.contains('mobile-nav_open')) {
-   window.addEventListener('touchmove', function (event) {
+document.body.addEventListener('touchmove', function (event) {
+   if (nav.classList.contains('mobile-nav_open')) {
       event.preventDefault();
-   });
-}
+   }
+});
 
 //Привязка навигации к разделам сайта
 function hideMobileNav() {

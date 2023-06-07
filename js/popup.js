@@ -49,11 +49,11 @@ if (popup.classList.contains('popup_active')) {
 }
 
 //Запрет скролла на iOS
-if (popup.classList.contains('popup_active')) {
-   window.addEventListener('touchmove', function (event) {
+document.body.addEventListener('touchmove', function (event) {
+   if (popup.classList.contains('popup_active')) {
       event.preventDefault();
-   });
-}
+   }
+});
 
 //Валидация поля ввода телефона
 const mask = IMask(phoneInput, {
