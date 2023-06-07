@@ -1,6 +1,6 @@
 .popup__no-scroll {
-   touch-action: none;
-   -ms-touch-action: none;
+   /* touch-action: none;
+   -ms-touch-action: none; */
    overflow-y: hidden;
 }
 
