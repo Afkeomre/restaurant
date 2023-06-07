@@ -30,7 +30,7 @@ fade.onclick = function () {
 
 //Запрет скролла на iOS
 if (nav.classList.contains('mobile-nav_open')) {
-   document.body.addEventListener('touchmove', function (event) {
+   window.addEventListener('touchmove', function (event) {
       event.preventDefault();
    });
 }

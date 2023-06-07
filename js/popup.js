@@ -50,7 +50,7 @@ if (popup.classList.contains('popup_active')) {
 
 //Запрет скролла на iOS
 if (popup.classList.contains('popup_active')) {
-   document.body.addEventListener('touchmove', function (event) {
+   window.body.addEventListener('touchmove', function (event) {
       event.preventDefault();
    });
 }
