@@ -1,4 +1,5 @@
 .popup__no-scroll {
+   touch-action: none;
    overflow-y: hidden;
 }
 
