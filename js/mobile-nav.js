@@ -29,7 +29,7 @@ fade.onclick = function () {
 };
 
 //Запрет скролла на iOS
-document.body.addEventListener('touchmove', function (event) {
+document.addEventListener('touchmove', function (event) {
    if (nav.classList.contains('mobile-nav_open')) {
       event.preventDefault();
    }
