@@ -22,7 +22,7 @@
 
 .popup {
    position: fixed;
-   top: -100%;
+   top: -110%;
    left: 5%;
    width: 90%;
    height: 90vh;

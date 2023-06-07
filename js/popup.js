@@ -5,6 +5,8 @@ const closePopupBtn = document.querySelector('.close-popup');
 const phoneInput = document.querySelector('.phone-input');
 const phoneLabelWarning = document.querySelector('.phone-label_warning');
 const phoneLabelInfo = document.querySelector('.phone-label_info');
+const inputs = document.querySelectorAll('input');
+const textarea = document.querySelector('textarea');
 
 for (let reservationBtn of reservationBtns) {
    reservationBtn.addEventListener('click', showPopup);
@@ -32,6 +34,18 @@ function closePopupWithEsc(event) {
    if (event.keyCode === 27) {
       closePopup();
    }
+}
+
+if (popup.classList.contains('popup_active')) {
+   for (let input of inputs) {
+      input.ariaReadOnly = false;
+   }
+   textarea.ariaReadOnly = false;
+} else {
+   for (let input of inputs) {
+      input.ariaReadOnly = true;
+   }
+   textarea.ariaReadOnly = true;
 }
 
 //Валидация поля ввода телефона
