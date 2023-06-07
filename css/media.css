@@ -1,530 +1,525 @@
 @media (max-width: 1200px) {
-  .gallery__wrapper::before,
-  .gallery__wrapper::after  {
-    display: none;
-  }
+   .section-gallery:before,
+   .section-gallery::after {
+      display: none;
+   }
 }
 
 @media (max-width: 1140px) {
-  .container {
-    padding: 0 15px;
-  }
-  .advantages {
-    margin-bottom: 120px;
-  }
-  .history {
-    justify-content: center;
-  }
-  .history__images {
-    width: 378px;
-    height: 349px;
-  }
-  .history__image_1 {
-    width: 163.1px;
-    height: 210px;
-    top: 42px;
-  }
-  .history__image_2 {
-    width: 178.5px;
-    height: 301px;
-    left: 132px;
-  }
-  .history__image_2::after {
-    top: 26px;
-    left: 70px;
-    width: 148.4px;
-    height: 114.8px;
-  }
-  .history__image_3 {
-    width: 177.8px;
-    height: 210px;
-  }
-  .celebrate__wrapper {
-    margin-bottom: 100px;
-  }
-  .meals {
-    margin-bottom: 130px;
-  }
-  .meals__title {
-    margin-bottom: 108px;
-  }
-  .meals__content {
-    gap: 20px;
-  }
-  .meals__menu-list {
-    gap: 20px;
-  }
-  .meals__menu-item {
-    gap: 20px;
-  }
-  .meals__menu-img {
-    max-width: 140px;
-    max-height: 135px;
-  }
-  .separator {
-    margin-bottom: 64px; 
-    width: 39%; 
-  }
-  .menu__title {
-    margin-bottom: 115px;
-  }
-  .cooks__photos {
-    gap: 20px;
-  }
+   .container {
+      padding: 0 15px;
+   }
+   .advantages {
+      margin-bottom: 120px;
+   }
+   .history {
+      justify-content: space-evenly;
+   }
+   .history__images {
+      width: 378px;
+      height: 349px;
+   }
+   .history__image_1 {
+      width: 163.1px;
+      height: 210px;
+      top: 42px;
+   }
+   .history__image_2 {
+      width: 178.5px;
+      height: 301px;
+      left: 132px;
+   }
+   .history__image_2::after {
+      top: 26px;
+      left: 70px;
+      width: 148.4px;
+      height: 114.8px;
+   }
+   .history__image_3 {
+      width: 177.8px;
+      height: 210px;
+   }
+   .section-celebrate {
+      margin-bottom: 100px;
+   }
+   .meals {
+      margin-bottom: 130px;
+   }
+   .meals__title {
+      margin-bottom: 108px;
+   }
+   .meals__content {
+      gap: 20px;
+   }
+   .meals__menu-list {
+      gap: 20px;
+   }
+   .meals__menu-item {
+      gap: 20px;
+   }
+   .meals__menu-img {
+      max-width: 140px;
+      max-height: 135px;
+   }
+   .menu__title {
+      margin-bottom: 115px;
+   }
+   .cooks__photos {
+      gap: 20px;
+   }
 }
 
 @media (max-width: 1024px) {
-  .header {
-    background-position: center left 35%;
-  }
-  .nav-list {
-    gap: 17px;
-  }
-  .advantages {
-    gap: 20px;
-  }
-  .history {
-    gap: 70px;
-  }
-  .history__content {
-    max-width: 400px;
-  }
-  .history__text {
-    margin-bottom: 50px;
-  }
-  .meals__menu-img {
-    max-width: 120px;
-    max-height: 125px;
-  }
-  .separator { 
-    margin-bottom: 48px;
-    width: 36%; 
-  }
-  .feedback__wrapper {
-    margin-bottom: 90px;
-  }
-  .gallery__content {
-    gap: 20px;
-  }
+   .header {
+      background-position: center left 35%;
+   }
+   .nav-list {
+      gap: 17px;
+   }
+   .advantages {
+      gap: 20px;
+   }
+   .history__content {
+      max-width: 400px;
+   }
+   .history__text {
+      margin-bottom: 50px;
+   }
+   .meals__menu-img {
+      max-width: 120px;
+      max-height: 125px;
+   }
+   .section-feedback {
+      margin-bottom: 90px;
+   }
+   .gallery__content {
+      gap: 20px;
+   }
 }
 
 @media (max-width: 950px) {
-  .meals__content {
-    justify-content: center;
-  }
-  .meals__menu-img {
-    max-width: 160px;
-    max-height: 140px;
-  }
-  .meals__menu-list {
-    width: auto;
-  }
-  .separator {
-    display: none;
-  }
-  .meals__menu-item {
-    gap: 10px;
-  }
-  .meals__menu-cost {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    font-size: 22px;
-    padding-top: 0;
-    width: auto;
-    text-align: center;
-  }
-  .price {
-    padding-top: 10px;
-  }
-  .menu__cards {
-    gap: 20px;
-  }
+   .meals__content {
+      justify-content: center;
+   }
+   .meals__menu-img {
+      max-width: 160px;
+      max-height: 140px;
+   }
+   .meals__menu-list {
+      width: auto;
+   }
+   .separator {
+      display: none;
+   }
+   .meals__menu-cost {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      font-size: 22px;
+      padding-top: 0;
+      width: auto;
+      text-align: center;
+   }
+   .meal-name {
+      padding-right: 0;
+   }
+   .price {
+      padding-top: 10px;
+      padding-left: 0;
+   }
+   .menu__cards {
+      gap: 20px;
+   }
 }
 
-
 @media (max-width: 900px) {
-  .nav-content {
-    display: none;
-  }
-  .mobile-nav-btn {
-    display: block;
-  }
-  .header {
-    padding-top: 20px;
-  }
-  .nav {
-    align-items: center;
-  }
-  .advantages {
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-    margin-bottom: 100px;
-  }
-  .advantages__card {
-    flex: 1 1 33.333%;
-  }
-  .advantages__card:last-child {
-    flex: 0 1 50%;
-  }
-  .history {
-    flex-direction: column;
-    margin-bottom: 80px;
-  }
-  .history__content {
-    max-width: 600px;
-  }
-  .celebrate__wrapper {
-    height: auto;
-    padding: 54px 0 80px 0;;
-  }
-  .celebrate__title {
-    font-size: 46px;
-  }
-  .btn__celebrate {
-    margin-right: 0;
-  }
+   .nav-content {
+      display: none;
+   }
+   .mobile-nav-btn {
+      display: block;
+   }
+   .header {
+      padding-top: 20px;
+   }
+   .nav {
+      align-items: center;
+   }
+   .advantages {
+      justify-content: center;
+      text-align: center;
+      flex-wrap: wrap;
+      margin-bottom: 100px;
+   }
+   .advantages__card {
+      flex: 1 1 33.333%;
+   }
+   .advantages__card:last-child {
+      flex: 0 1 50%;
+   }
+   .history {
+      flex-direction: column;
+      gap: 80px;
+      margin-bottom: 80px;
+   }
+   .history__content {
+      max-width: 600px;
+   }
+   .section-celebrate {
+      height: auto;
+      padding: 54px 0 80px 0;
+   }
+   .celebrate__title {
+      font-size: 46px;
+   }
+   .btn__celebrate {
+      margin-right: 0;
+   }
 }
 
 @media (max-width: 830px) {
-  .header {
-    background-position: center left 28%;
-  }
-  .menu__cards {
-    gap: 15px;
-  }
-  .celebrate__wrapper {
-    padding: 40px 0 60px 0;;
-  }
-  .celebrate {
-    flex-direction: column;
-    gap: 41px;
-    text-align: center;
-  }
-  .meals__menu-img {
-    max-width: 145px;
-    max-height: 130px;
-  }
-  .cards__item-image img{
-    width: 205px;
-  }
-  .cards__item-price {
-    width: 85px;
-    height: 85px;
-    padding-top: 20px;
-  }
-} 
+   .header {
+      background-position: center left 28%;
+   }
+   .menu__cards {
+      gap: 15px;
+   }
+   .section-celebrate {
+      padding: 40px 0 60px 0;
+   }
+   .celebrate {
+      flex-direction: column;
+      gap: 41px;
+      text-align: center;
+   }
+   .meals__menu-img {
+      max-width: 145px;
+      max-height: 130px;
+   }
+   .meals__menu-item {
+      gap: 10px;
+   }
+   .cards__item-image img {
+      width: 205px;
+   }
+   .cards__item-price {
+      width: 85px;
+      height: 85px;
+      padding-top: 20px;
+   }
+}
 
 @media (max-width: 768px) {
-  .menu__title {
-    margin-bottom: 98px;
-  }
-  .card {
-    min-height: 276px;
-    padding: 33px 13px 17px;
-  }
-  .card__title {
-    margin-bottom: 6px;
-  }
-  .card__text {
-    font-size: 22px;
-  }
-  .menu__wrapper {
-    height: 838px;
-    padding: 62px 0 106px;
-  }
-  .cards__item-image img{
-    width: 225px;
-  }
-  .cards__item-price {
-    width: 100px;
-    height: 100px;
-    padding-top: 28px;
-  }
-  .cards__item {
-    flex: 0 1 auto;
-    min-width: 290px;
-  }
-  .feedback__card {
-    padding-top: 80px;
-  }
-  .dots-container_visible {
-    padding-bottom: 80px;
-  }
-  .cooks__photos {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .cooks {
-    margin-bottom: 70px;
-  }
+   .menu__title {
+      margin-bottom: 98px;
+   }
+   .card {
+      min-height: 276px;
+      padding: 33px 13px 17px;
+   }
+   .card__title {
+      margin-bottom: 6px;
+   }
+   .card__text {
+      font-size: 22px;
+   }
+   .section-menu {
+      height: 838px;
+      padding: 62px 0 106px;
+   }
+   .cards__item-image img {
+      width: 225px;
+   }
+   .cards__item-price {
+      width: 100px;
+      height: 100px;
+      padding-top: 28px;
+   }
+   .cards__item {
+      flex: 0 1 auto;
+      min-width: 290px;
+   }
+   .feedback__card {
+      padding-top: 80px;
+   }
+   .dots-container_visible {
+      padding-bottom: 80px;
+   }
+   .cooks__photos {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   .cooks {
+      margin-bottom: 70px;
+   }
 }
 
 @media (max-width: 680px) {
-  .header {
-    background-position: center left 30%;
-  }
-  .header-welcome {
-    padding: 250px 0 304px;
-  }
-  .header-welcome__title {
-    font-size: 45px;  
-  }
-  .header-welcome__title_big {
-    font-size: 55px;
-  }
-  .header-welcome__subtitle {
-    font-size: 16px;
-  }
-  .advantages {
-    margin-top: -102px;
-  }
-  .advantages__card {
-    flex: 0 1 50%;
-    min-width: 300px;
-  }
-  .meals {
-    margin-bottom: 100px;
-  }
-  .meals__content {
-    flex-direction: column;
-    gap: 49px;
-  }
-  .meals__image {
-    width: 110%;
-  }
-  .meals__image img {
-    object-fit: cover;
-  }
-  .meals__menu-item {
-    gap: 40px;
-  }
-  .gallery__content {
-    gap: 15px;
-  }
+   .header {
+      background-position: center left 30%;
+   }
+   .header-welcome {
+      padding: 250px 0 304px;
+   }
+   .header-welcome__title {
+      font-size: 45px;
+   }
+   .header-welcome__title_big {
+      font-size: 55px;
+   }
+   .header-welcome__subtitle {
+      font-size: 16px;
+   }
+   .advantages {
+      margin-top: -102px;
+   }
+   .advantages__card {
+      flex: 0 1 50%;
+      min-width: 300px;
+   }
+   .meals {
+      margin-bottom: 100px;
+   }
+   .meals__content {
+      flex-direction: column;
+      gap: 49px;
+   }
+   .meals__image {
+      width: 110%;
+   }
+   .meals__image img {
+      object-fit: cover;
+   }
+   .meals__menu-item {
+      gap: 40px;
+   }
+   .gallery__content {
+      gap: 15px;
+   }
 }
 
 @media (max-width: 530px) {
-  .logo {
-    max-width: 65px;
-  }
-  .header-welcome {
-    max-width: auto;
-  }
-  .header-welcome__subtitle::before,
-  .header-welcome__subtitle::after {
+   .logo {
+      max-width: 65px;
+   }
+   .header-welcome {
+      max-width: auto;
+   }
+   .header-welcome__subtitle::before,
+   .header-welcome__subtitle::after {
       display: none;
-    }
-  .gallery__content {
-    grid-template-areas: "table table"
-                            "coffee goulash"
-                        "coffee-2 goulash-2" 
-                        "table-2 table-2";
-  }
-  .main-information {
-    gap: 15px;
-  }
-  .popup-item__guests input {
-    align-self: flex-start;
-  }
-  .popup-item__approval {
-    padding-left: 20px;
-  }
+   }
+   .gallery__content {
+      grid-template-areas:
+         'table table'
+         'coffee goulash'
+         'coffee-2 goulash-2'
+         'table-2 table-2';
+   }
+   .main-information {
+      gap: 15px;
+   }
+   .popup-item__guests input {
+      align-self: flex-start;
+   }
+   .popup-item__approval {
+      padding-left: 20px;
+   }
 }
 
 @media (max-width: 425px) {
-  .title {
-    max-width: 181px;
-    font-size: 40px;
-    line-height: 1.1;
-    margin: 0 auto;
-  }
-  .header-welcome__title {
-    font-size: 40px;
-  }
-  .header-welcome__title_big {
-    font-size: 50px;
-  }
-  .gallery__title {
-    margin-bottom: 82px;
-  }
-  .cooks__title {
-    margin-bottom: 80px;
-  }
-  .logo {
-    max-width: 47px;
-  }
-  .history {
-    align-items: stretch;
-    gap: 45px;
-    margin-bottom: 51px;
-  }
-  .history__text {
-    margin-bottom: 96px;
-  }
-  .history__quantity {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .history__images {
-    width: 290px;
-    height: 257px;
-    margin: 0 auto;
-  }
-  .history__image_1 {
-    top: 33px;
-    width: 125.36px;
-    height: 154.86px;
-    box-shadow: 20px 0px 30px 3px rgba(0, 0, 0, 0.5);
-  }
-  .history__image_2 {
-    width: 137.2px;
-    height: 221.97px;
-    left: 102px;
-  }
-  .history__image_2::after {
-    top: 17px;
-    left: 51px;
-    width: 114px;
-    height: 84px;
-  }
-  .history__image_3 {
-    width: 136.66px;
-    height: 154.86px;
-  }
-  .history__title {
-    margin-bottom: 48px;
-  }
-  .celebrate__wrapper {
-    padding: 20px 0 30px 0;
-    margin-bottom: 63px;
-  }
-  .celebrate__title {
-    font-size: 30px;
-    line-height: 1.1;
-    padding: 0 50px;
-  }
-  .meals {
-    margin-bottom: 126px;
-  }
-  .meals__title {
-    margin-bottom: 68px;
-  }
-  .meals__image {
-    width: 130%;
-  }
-  .meals__image img {
-    height: 478px;
-    object-position: center left;
-  }
-  .meals__menu-list {
-    width: 291px;
-    gap: 87px;
-  }
-  .meals__menu-item {
-    width: 100%;
-    gap: 8px;
-  }
-  .meals__menu-img {
-    width: 130px;
-    height: 114px;
-  }
-  .price {
-    display: block;
-    font-size: 26px;
-  }
-  .menu__title {
-    max-width: 270px;
-    font-size: 54px;
-  }
-  .popup {
-    padding: 15px;
-  }
+   .title {
+      max-width: 181px;
+      font-size: 40px;
+      line-height: 1.1;
+      margin: 0 auto;
+   }
+   .header-welcome__title {
+      font-size: 40px;
+   }
+   .header-welcome__title_big {
+      font-size: 50px;
+   }
+   .gallery__title {
+      margin-bottom: 82px;
+   }
+   .cooks__title {
+      margin-bottom: 80px;
+   }
+   .logo {
+      max-width: 47px;
+   }
+   .history {
+      align-items: stretch;
+      gap: 45px;
+      margin-bottom: 51px;
+   }
+   .history__text {
+      margin-bottom: 96px;
+   }
+   .history__quantity {
+      flex-direction: column;
+      gap: 20px;
+   }
+   .history__images {
+      width: 290px;
+      height: 257px;
+      margin: 0 auto;
+   }
+   .history__image_1 {
+      top: 33px;
+      width: 125.36px;
+      height: 154.86px;
+      box-shadow: 20px 0px 30px 3px rgba(0, 0, 0, 0.5);
+   }
+   .history__image_2 {
+      width: 137.2px;
+      height: 221.97px;
+      left: 102px;
+   }
+   .history__image_2::after {
+      top: 17px;
+      left: 51px;
+      width: 114px;
+      height: 84px;
+   }
+   .history__image_3 {
+      width: 136.66px;
+      height: 154.86px;
+   }
+   .history__title {
+      margin-bottom: 48px;
+   }
+   .section-celebrate {
+      padding: 20px 0 30px 0;
+      margin-bottom: 63px;
+   }
+   .celebrate__title {
+      font-size: 30px;
+      line-height: 1.1;
+      padding: 0 50px;
+   }
+   .meals {
+      margin-bottom: 126px;
+   }
+   .meals__title {
+      margin-bottom: 68px;
+   }
+   .meals__image {
+      width: 130%;
+   }
+   .meals__image img {
+      height: 478px;
+      object-position: center left;
+   }
+   .meals__menu-list {
+      width: 291px;
+      gap: 87px;
+   }
+   .meals__menu-item {
+      width: 100%;
+      gap: 8px;
+   }
+   .meals__menu-img {
+      width: 130px;
+      height: 114px;
+   }
+   .price {
+      display: block;
+      font-size: 26px;
+   }
+   .menu__title {
+      max-width: 270px;
+      font-size: 54px;
+      margin-bottom: 98px;
+   }
+   .popup {
+      padding: 15px;
+   }
 }
 
 @media (max-width: 375px) {
-  .header {
-    background-position: center center;
-  }
-  .header-welcome__title {
-    font-size: 30px;
-  }
-  .header-welcome__title_big {
-    font-size: 40px;
-    margin-bottom: 3px;
-  }
-  .header-welcome__subtitle {
-    font-size: 15px;
-    line-height: 1.3;
-    margin-bottom: 45px;
-  }
-  .advantages {
-    gap: 14px;
-    margin-bottom: 75px;
-  }
-  .advantages__card {
-    min-width: 290px;
-  }
-  .feedback__wrapper {
-    margin-bottom: 71px;
-  }
-  .feedback__card {
-    padding: 20px 0 26px;
-    gap: 5px;
-    min-height: 591px;
-  }
-  .feedback__photo {
-    padding-top: 10px;
-  }
-  .feedback__label_bold {
-    margin-bottom: 5px;
-  }
-  .prew_visible, .next_visible {
-    top: 75%;
-    padding: 5px;
-  }
-  .dots-container_visible {
-    padding-bottom: 26px;
-  }
-  .gallery {
-    margin-bottom: 71px;
-  }
-  .gallery__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .gallery__content-item img {
-    min-height: 274px;
-    width: 290px;
-    object-fit: cover;
-    object-position: center center;
-  }
-  .cooks {
-    margin-bottom: 21px;
-  }
-  .cooks__photos {
-    gap: 17px;
-  }
-  .footer {
-    background-position: center left 53%;
-  }
-  .popup-item__approval {
-    padding-left: 5px;
-  }
-  .popup input {
-    height: 28px;
-  }
-  .popup textarea {
-    width: 260px;
-  }
-  .popup-item__name input {
-    width: 130px;
-  }
-  .popup-item__guests input {
-    width: 40px;
-  }
+   .header {
+      background-position: center center;
+   }
+   .header-welcome__title {
+      font-size: 30px;
+   }
+   .header-welcome__title_big {
+      font-size: 40px;
+      margin-bottom: 3px;
+   }
+   .header-welcome__subtitle {
+      font-size: 15px;
+      line-height: 1.3;
+      margin-bottom: 45px;
+   }
+   .advantages {
+      gap: 14px;
+      margin-bottom: 75px;
+   }
+   .advantages__card {
+      min-width: 290px;
+   }
+   .section-feedback {
+      margin-bottom: 71px;
+   }
+   .feedback__card {
+      padding: 20px 0 26px;
+      gap: 5px;
+      min-height: 591px;
+   }
+   .feedback__photo {
+      padding-top: 10px;
+   }
+   .feedback__label_bold {
+      margin-bottom: 5px;
+   }
+   .prew_visible,
+   .next_visible {
+      top: 75%;
+      padding: 5px;
+   }
+   .dots-container_visible {
+      padding-bottom: 26px;
+   }
+   .gallery {
+      margin-bottom: 71px;
+   }
+   .gallery__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .gallery__content-item img {
+      min-height: 274px;
+      width: 290px;
+      object-fit: cover;
+      object-position: center center;
+   }
+   .cooks {
+      margin-bottom: 21px;
+   }
+   .cooks__photos {
+      gap: 17px;
+   }
+   .footer {
+      background-position: center left 53%;
+   }
+   .popup-item__approval {
+      padding-left: 5px;
+   }
+   .popup input {
+      height: 28px;
+   }
+   .popup textarea {
+      width: 260px;
+   }
+   .popup-item__name input {
+      width: 130px;
+   }
+   .popup-item__guests input {
+      width: 40px;
+   }
 }
-

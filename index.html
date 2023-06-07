@@ -43,8 +43,9 @@
 					<label class="label__text" for="preferences">Ваши пожелания</label>
 				</div>
 				<div class="popup-item popup-item__phone">
-					<input class="phone-input" type="tel" minlength="16" placeholder="+7(___)___-__-__" name="phone" id="phone" required>
-					<label class="label__text" for="phone">Телефон для обратной связи</label>
+					<input class="phone-input" type="tel" placeholder="+7(___)___-__-__" name="phone" id="phone" required>
+					<label class="label__text phone-label phone-label_info phone-label_active" for="phone">Телефон для обратной связи</label>
+					<label class="label__text phone-label phone-label_warning" for="phone">Введено недостаточное количество символов</label>
 				</div>
 				<div class="popup-item popup-item__approval">
 					<input type="checkbox" name="approval" id="approval" required>
@@ -64,11 +65,11 @@
 					</a>
 					<div class="nav-content">
 						<ul class="nav-list">
-							<li class="nav-list__item"><a href="#" class="nav-list__link">Главная</a></li>
-							<li class="nav-list__item"><a href="#" class="nav-list__link">Меню</a></li>
-							<li class="nav-list__item"><a href="#" class="nav-list__link">O нас</a></li>
-							<li class="nav-list__item"><a href="#" class="nav-list__link">Бронь</a></li>
-							<li class="nav-list__item"><a href="#"><img src="img/icons/cart.svg" class="cart" alt="cart"></a>
+							<li class="nav-list__item"><a href="#major" class="nav-list__link">Главная</a></li>
+							<li class="nav-list__item"><a href="#meals" class="nav-list__link">Меню</a></li>
+							<li class="nav-list__item"><a href="#aboutus" class="nav-list__link">O нас</a></li>
+							<li class="nav-list__item"><a href="#reservation" class="nav-list__link">Бронь</a></li>
+							<li class="nav-list__item"><a href="#menu"><img src="img/icons/cart.svg" class="cart" alt="cart"></a>
 							</li>
 						</ul>
 						<div class="nav-contact">
@@ -86,7 +87,7 @@
 
 				</nav>
 
-				<div class="header-welcome">
+				<div id="major" class="header-welcome">
 					<h1 class="header-welcome__title"><span class="header-welcome__title_small">Добро пожаловать в
 						</span><span class="header-welcome__title_big">Наш
 							ресторан</span></h1>
@@ -101,18 +102,18 @@
 		<div class="mobile-nav-fade"></div>
 		<div class="mobile-nav">
 			<ul class="mobile-nav__list">
-				<li><a href="#">Главная</a></li>
-				<li><a href="#">Меню</a></li>
-				<li><a href="#">O нас</a></li>
-				<li><a href="#">Бронь</a></li>
-				<li><a href="#"><img src="img/icons/cart.svg" alt="cart"></a></li>
+				<li><a id="major-link" href="#">Главная</a></li>
+				<li><a id="meals-link" href="#">Меню</a></li>
+				<li><a id="aboutus-link" href="#">O нас</a></li>
+				<li><a id="reservation-link" href="#">Бронь</a></li>
+				<li><a id="menu-link" href="#"><img src="img/icons/cart.svg" alt="cart"></a></li>
 			</ul>
 			<div class="nav-contact-wrapper">
 				<div class="nav-contact mobile-nav-contact">
 					<div class="nav-contact__phone mobile-nav-contact__phone">+999-888-76-54</div>
 					<div class="nav-contact__text mobile-nav-contact__text">Свяжитесь с нами для бронирования</div>
 				</div>
-				<button class="btn btn__nav mobile-btn__nav reservation">Заказ столика</button>
+				<button data-sign="burger-btn" class="btn btn__nav mobile-btn__nav reservation">Заказ столика</button>
 			</div>
 		</div>
 
@@ -120,8 +121,8 @@
 		<main class="main">
 
 			<!-- Advantages -->
-			<section class="section">
-				<div class="container">
+			<section class="section section-advantages">
+				<div class="section-advantages__container container">
 					<div class="advantages">
 
 						<div class="advantages__card card">
@@ -155,8 +156,8 @@
 			</section>
 
 			<!-- History -->
-			<section class="section">
-				<div class="container">
+			<section id="aboutus" class="section section-history">
+				<div class="section-history__container container">
 					<div class="history">
 
 						<div class="history__content">
@@ -197,8 +198,8 @@
 			</section>
 
 			<!-- Celebrate -->
-			<section class="section celebrate__wrapper">
-				<div class="container">
+			<section id="reservation" class="section section-celebrate">
+				<div class="section-celebrate__container container">
 					<div class="celebrate">
 						<div class="celebrate__content">
 							<h3 class="celebrate__title">Отпразднуйте в одном из
@@ -211,8 +212,8 @@
 			</section>
 
 			<!-- Meals -->
-			<section class="section">
-				<div class="container">
+			<section id="meals" class="section section-meals">
+				<div class="section-meals__container container">
 					<div class="meals">
 						<h2 class="meals__title title">Наши <span class="title_bright">Блюда</span>
 						</h2>
@@ -228,7 +229,7 @@
 									<img class="meals__menu-img" src="img/meals/hamburger01.jpg" alt="hamburger">
 
 									<div class="meals__menu-cost">
-										Гамбургер мини
+										<span class="meal-name">Гамбургер&nbsp;мини </span> 
 										<span class="separator"></span><span class="price">220
 											₽</span>
 									</div>
@@ -239,7 +240,7 @@
 									<img class="meals__menu-img" src="img/meals/hamburger01.jpg" alt="hamburger">
 
 									<div class="meals__menu-cost">
-										Гамбургер мини <span class="separator"></span><span class="price">220
+										<span class="meal-name">Гамбургер&nbsp;мини </span> <span class="separator"></span><span class="price">220
 											₽</span>
 									</div>
 								</li>
@@ -249,7 +250,7 @@
 									<img class="meals__menu-img" src="img/meals/hamburger01.jpg" alt="hamburger">
 
 									<div class="meals__menu-cost">
-										Гамбургер мини <span class="separator"></span><span class="price">220
+										<span class="meal-name">Гамбургер&nbsp;мини </span><span class="separator"></span><span class="price">220
 											₽</span>
 									</div>
 								</li>
@@ -261,8 +262,8 @@
 			</section>
 
 			<!-- Menu -->
-			<section class="section menu__wrapper">
-				<div class="container">
+			<section id="menu" class="section section-menu">
+				<div class="section-menu__container container">
 					<div class="menu">
 						<h2 class="menu__title title">Наше меню</h2>
 
@@ -332,8 +333,8 @@
 			</section>
 
 			<!-- Feedback -->
-			<section class="section feedback__wrapper">
-				<div class="container">
+			<section class="section section-feedback">
+				<div class="section-feedback__container container">
 
 					<div class="feedback slideshow-container_wide">
 
@@ -394,8 +395,8 @@
 			</section>
 
 			<!-- Gallery -->
-			<section class="section gallery__wrapper">
-				<div class="container">
+			<section class="section section-gallery">
+				<div class="section-gallery__container container">
 					<div class="gallery">
 						<h2 class="gallery__title title">Галерея <span class="title_bright">Блюд</span>
 						</h2>
@@ -430,8 +431,8 @@
 			</section>
 
 			<!-- Cooks -->
-			<section class="section">
-				<div class="container">
+			<section class="section section-cooks">
+				<div class="section-cooks__container container">
 					<div class="cooks">
 						<h2 class="cooks__title title">Наши <span class="title_bright">Повара</span>
 						</h2>
