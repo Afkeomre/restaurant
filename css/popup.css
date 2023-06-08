@@ -1,5 +1,5 @@
 .popup__no-scroll {
-   position: relative;
+   touch-action: none;
    overflow-y: hidden;
 }
 
