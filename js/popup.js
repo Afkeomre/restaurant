@@ -48,19 +48,6 @@ if (popup.classList.contains('popup_active')) {
    textarea.ariaReadOnly = true;
 }
 
-//Запрет скролла на iOS
-if (
-   popup.classList.contains('popup_active') ||
-   nav.classList.contains('mobile-nav_open')
-) {
-   window.addEventListener('touchstart', (e) => e.preventDefault(), {
-      passive: false,
-   });
-   window.addEventListener('touchmove', (e) => e.preventDefault(), {
-      passive: false,
-   });
-}
-
 //Валидация поля ввода телефона
 const mask = IMask(phoneInput, {
    mask: '+{7}(000)000-00-00',
