@@ -49,11 +49,14 @@ if (popup.classList.contains('popup_active')) {
 }
 
 //Запрет скролла на iOS
-document.addEventListener('touchmove', function (event) {
-   if (popup.classList.contains('popup_active')) {
+if (
+   popup.classList.contains('popup_active') ||
+   nav.classList.contains('mobile-nav_open')
+) {
+   document.body.addEventListener('touchmove', function (event) {
       event.preventDefault();
-   }
-});
+   });
+}
 
 //Валидация поля ввода телефона
 const mask = IMask(phoneInput, {

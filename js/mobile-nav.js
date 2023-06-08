@@ -28,13 +28,6 @@ fade.onclick = function () {
    document.body.classList.toggle('no-scroll');
 };
 
-//Запрет скролла на iOS
-document.addEventListener('touchmove', function (event) {
-   if (nav.classList.contains('mobile-nav_open')) {
-      event.preventDefault();
-   }
-});
-
 //Привязка навигации к разделам сайта
 function hideMobileNav() {
    nav.classList.remove('mobile-nav_open');
