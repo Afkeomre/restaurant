@@ -53,9 +53,7 @@ if (
    popup.classList.contains('popup_active') ||
    nav.classList.contains('mobile-nav_open')
 ) {
-   document.body.addEventListener('touchmove', function (event) {
-      event.preventDefault();
-   });
+   window.addEventListener('touchmove', function () {});
 }
 
 //Валидация поля ввода телефона
