@@ -1,4 +1,5 @@
 .no-scroll {
+   position: relative;
    overflow-y: hidden;
 }
 
