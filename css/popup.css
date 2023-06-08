@@ -23,10 +23,10 @@
 
 .popup {
    position: fixed;
-   top: -110%;
+   top: -100%;
    left: 5%;
    width: 90%;
-   height: 90vh;
+   height: 90%;
    display: flex;
    flex-direction: column;
    justify-content: space-evenly;
