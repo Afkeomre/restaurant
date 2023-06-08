@@ -49,12 +49,12 @@ if (popup.classList.contains('popup_active')) {
 }
 
 //Запрет скролла на iOS
-document.body.addEventListener('touchmove', function (event) {
+document.body.addEventListener('touchmove', function (e) {
    if (
       popup.classList.contains('popup_active') ||
       nav.classList.contains('mobile-nav_open')
    ) {
-      event.preventDefault();
+      e.preventDefault();
    }
 });
 
