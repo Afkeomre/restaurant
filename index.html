@@ -12,48 +12,52 @@
 
 <body>
 	<div class="wrapper">
-		
+
 		<!-- Popup -->
 		<div class="popup__bg"></div>
-		
-			<form action="#" class="popup">
-				<button type="button" class="close-popup"><span class="close-popup__item"></span></button>
-				<div class="main-information">
-					<div class="popup-item popup-item__name">
-						<input type="text" name="name" pattern="[A-Za-zА-Яа-яЁё]{1,30}" autocomplete="off" id="name" maxlength="20" class="popup__name" required>
-						<label class="label__text" for="name">Ваше имя</label>
-					</div>
-					<div class="popup-item popup-item__guests">
-						<input type="number" min="1" max="8" name="guests" id="guests" required>
-						<label class="label__text" for="guests">Количество гостей</label>
-					</div>
+
+		<form action="#" class="popup">
+			<button type="button" class="close-popup"><span class="close-popup__item"></span></button>
+			<div class="main-information">
+				<div class="popup-item popup-item__name">
+					<input type="text" name="name" pattern="[A-Za-zА-Яа-яЁё]{1,30}" autocomplete="off" id="name"
+						maxlength="20" class="popup__name" required>
+					<label class="label__text" for="name">Ваше имя</label>
 				</div>
-				<div class="date-time">
-					<div class="popup-item popup-item__date">
-						<input type="date" min="2023-06-05" max="2023-07-05" name="date" id="date" required>
-						<label class="label__text" for="date">Выберите дату</label>
-					</div>
-					<div class="popup-item popup-item__time">
-						<input type="time" min="09:00" max="21:00" name="time" id="time" required>
-						<label class="label__text" for="time">Укажите время</label>
-					</div>
+				<div class="popup-item popup-item__guests">
+					<input type="number" min="1" max="8" name="guests" id="guests" required>
+					<label class="label__text" for="guests">Количество гостей</label>
 				</div>
-				<div class="popup-item popup-item__preferences">
-					<textarea name="preferences" maxlength="150" id="preferences"></textarea>
-					<label class="label__text" for="preferences">Ваши пожелания</label>
+			</div>
+			<div class="date-time">
+				<div class="popup-item popup-item__date">
+					<input type="date" name="date" id="date" required>
+					<label class="label__text" for="date">Выберите дату</label>
 				</div>
-				<div class="popup-item popup-item__phone">
-					<input class="phone-input" type="tel" placeholder="+7(___)___-__-__" name="phone" id="phone" required>
-					<label class="label__text phone-label phone-label_info phone-label_active" for="phone">Телефон для обратной связи</label>
-					<label class="label__text phone-label phone-label_warning" for="phone">Введено недостаточное количество символов</label>
+				<div class="popup-item popup-item__time">
+					<input type="time" min="09:00" max="21:00" name="time" id="time" required>
+					<label class="label__text" for="time">Укажите время</label>
 				</div>
-				<div class="popup-item popup-item__approval">
-					<input type="checkbox" name="approval" id="approval" required>
-					<label class="label__text" for="approval">Подтвердите согласие на обработку ваших персональных данных</label>
-				</div>
-				<button type="submit" class="btn btn__popup">Заказать столик</button>
-			</form>
-		
+			</div>
+			<div class="popup-item popup-item__preferences">
+				<textarea name="preferences" maxlength="150" id="preferences"></textarea>
+				<label class="label__text" for="preferences">Ваши пожелания</label>
+			</div>
+			<div class="popup-item popup-item__phone">
+				<input class="phone-input" type="tel" placeholder="+7(___)___-__-__" name="phone" id="phone" required>
+				<label class="label__text phone-label phone-label_info phone-label_active" for="phone">Телефон для обратной
+					связи</label>
+				<label class="label__text phone-label phone-label_warning" for="phone">Введено недостаточное количество
+					символов</label>
+			</div>
+			<div class="popup-item popup-item__approval">
+				<input type="checkbox" name="approval" id="approval" required>
+				<label class="label__text" for="approval">Подтвердите согласие на обработку ваших персональных
+					данных</label>
+			</div>
+			<button type="submit" class="btn btn__popup">Заказать столик</button>
+		</form>
+
 
 		<!-- HEADER -->
 		<header class="header">
@@ -69,7 +73,8 @@
 							<li class="nav-list__item"><a href="#meals" class="nav-list__link">Меню</a></li>
 							<li class="nav-list__item"><a href="#aboutus" class="nav-list__link">O нас</a></li>
 							<li class="nav-list__item"><a href="#reservation" class="nav-list__link">Бронь</a></li>
-							<li class="nav-list__item"><a href="#menu"><img src="img/icons/cart.svg" class="cart" alt="cart"></a>
+							<li class="nav-list__item"><a href="#menu"><img src="img/icons/cart.svg" class="cart"
+										alt="cart"></a>
 							</li>
 						</ul>
 						<div class="nav-contact">
@@ -229,7 +234,7 @@
 									<img class="meals__menu-img" src="img/meals/hamburger01.jpg" alt="hamburger">
 
 									<div class="meals__menu-cost">
-										<span class="meal-name">Гамбургер&nbsp;мини </span> 
+										<span class="meal-name">Гамбургер&nbsp;мини </span>
 										<span class="separator"></span><span class="price">220
 											₽</span>
 									</div>
@@ -240,7 +245,8 @@
 									<img class="meals__menu-img" src="img/meals/hamburger01.jpg" alt="hamburger">
 
 									<div class="meals__menu-cost">
-										<span class="meal-name">Гамбургер&nbsp;мини </span> <span class="separator"></span><span class="price">220
+										<span class="meal-name">Гамбургер&nbsp;мини </span> <span class="separator"></span><span
+											class="price">220
 											₽</span>
 									</div>
 								</li>
@@ -250,7 +256,8 @@
 									<img class="meals__menu-img" src="img/meals/hamburger01.jpg" alt="hamburger">
 
 									<div class="meals__menu-cost">
-										<span class="meal-name">Гамбургер&nbsp;мини </span><span class="separator"></span><span class="price">220
+										<span class="meal-name">Гамбургер&nbsp;мини </span><span class="separator"></span><span
+											class="price">220
 											₽</span>
 									</div>
 								</li>

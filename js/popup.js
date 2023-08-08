@@ -7,6 +7,7 @@ const phoneLabelWarning = document.querySelector('.phone-label_warning');
 const phoneLabelInfo = document.querySelector('.phone-label_info');
 const inputs = document.querySelectorAll('input');
 const textarea = document.querySelector('textarea');
+const date = document.querySelector('#date');
 
 for (let reservationBtn of reservationBtns) {
    reservationBtn.addEventListener('click', showPopup);
@@ -67,3 +68,11 @@ phoneInput.addEventListener('input', function () {
       phoneLabelWarning.classList.remove('phone-label_active');
    }
 });
+
+const [today] = new Date().toISOString().split('T');
+const maxDate = new Date();
+maxDate.setDate(maxDate.getDate() + 30);
+const [maxDateFormatted] = maxDate.toISOString().split('T');
+
+date.setAttribute('min', today);
+date.setAttribute('max', maxDateFormatted);
